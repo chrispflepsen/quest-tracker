@@ -1,0 +1,119 @@
+[
+    {
+        "description" : [
+            "Cora told the story how the speaker went missing in a blizzard two months prior."
+        ],
+        "title" : "Blizzard of the Mind",
+        "complete" : false,
+        "contact": "",
+        "city": "Bremen",
+        "location": "Town Hall",
+        "reward": "None",
+        "created": "2020-12-08",
+        "updated": "2020-12-08",
+        "progress" : [
+            {
+                "step_complete" : false,
+                "step_title" : "Investigate speaker's temporary insanity"
+            }
+        ]
+    },
+    {
+        "description" : [
+            "Cora’s son, Huawar, went to find him, but was separated from the search party. He returned a day later than the rest of the group. He had frostbite and could barely walk, but he carried with him a shard of black ice.",
+            "Huarwar started to act uncharacteristically cold and mean toward Cora. When she touched the black shard, Huarwar threatened her with bodily harm.",
+            "The next day, two tieflings offered Huarwar sanctuary in their castle. These tieflings wore amulets that looked a lot like Huarwar’s black ice shard. Huarwar took them up on their offer, bringing his black ice along",
+            "Cora knows only of two castles in Ten-Towns: an intact one in Caer-Dineval and a ruined one in Car-Konig"
+        ],
+        "title" : "Black Ice",
+        "complete" : false,
+        "contact": "Cora",
+        "city": "Bremen",
+        "location": "Buried Treasures",
+        "reward": "None",
+        "created": "2020-12-08",
+        "updated": "2020-12-08",
+        "progress" : [
+            {
+                "step_complete" : false,
+                "step_title" : "Investigate Caer-Dineval castle"
+            },
+            {
+                "step_complete" : false,
+                "step_title" : "Investigate Car-Konig castle ruins"
+            }
+        ]
+    },
+    {
+        "description" : [
+            "She has offered 100 gold pieces to anyone who can apprehend the murderer, ascertain the murderer’s guilt, and deal with the murderer, preferably without involving the authorities.",
+            "Three murders have been committed in the past month:",
+            "A halfling trapper in Easthaven",
+            "A human shipbuilder in Targos (Maurice)",
+            "A dwarf glassblower in Bryn Shander",
+            "Each of these murders took place in a town that makes humanoid sacrifice to Auril",
+            "Maurice was always very nervous about the humanoid sacrifice lottery, and that his body was found just outside of town where merchant caravans tend to set up shops."
+        ],
+        "title" : "Sherlock for Hire",
+        "complete" : false,
+        "contact": "Hlin Trollbane",
+        "city": "Bremen",
+        "location": "Buried Treasures",
+        "reward": "100 gold",
+        "created": "2020-14-08",
+        "updated": "2020-14-08",
+        "progress" : [
+            {
+                "step_complete" : false,
+                "step_title" : "Ascertain the murderer’s guilt"
+            },
+            {
+                "step_complete" : false,
+                "step_title" : "Apprehend murderer"
+            }
+        ]
+    },
+    {
+        "description" : [
+            "A dog named Boy finds our adventurers and warns them of 'Snow, Yeti, Hurt.'",
+            "Boy drags them to the home of a human. While serving them Luke-warm cider, the human tells them about his husband Garret, who led an expedition up Kelvin’s Cairn. They left from Car-Konig, and if Boy is back in Targos, something terrible must have happened. Boy would never leave Garret’s side otherwise."
+        ],
+        "title" : "A Dog Named Boy",
+        "complete" : false,
+        "contact": "Garret's Husband",
+        "city": "Targos",
+        "location": "Garret's Home",
+        "reward": "Cold Cider",
+        "created": "2020-14-08",
+        "updated": "2020-14-08",
+        "progress" : [
+            {
+                "step_complete" : false,
+                "step_title" : "Follow Boy to Kelvin's Cairn"
+            }
+        ]
+    },
+    {
+        "description" : [
+            "Axeman knows there is beer. Axeman wants beer."
+        ],
+        "title" : "A Drink Too Far",
+        "complete" : false,
+        "contact": "Bartender",
+        "city": "Good Mead",
+        "location": "Brewery",
+        "reward": "Ale",
+        "created": "2020-14-08",
+        "updated": "2020-14-08",
+        "progress" : [
+            {
+                "step_complete" : false,
+                "step_title" : "Find brewery in Good Mead"
+            },
+            {
+                "step_complete" : false,
+                "step_title" : "Drink all the beer"
+            }
+        ]
+    }
+]

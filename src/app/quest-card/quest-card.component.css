@@ -1,0 +1,11 @@
+input[type="checkbox"] {
+    pointer-events: none;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}

@@ -1,0 +1,33 @@
+<div class="h-100 dib">
+    <div class="quest-list w-75">
+        <h1 class="pa2 tc">Quest Tracker:</h1>
+        <app-quest-card *ngFor="let quest of quests;" [quest]="quest"></app-quest-card>
+    </div>
+    
+    <mat-card class="filter-list w-20">
+        <div>
+            <mat-slide-toggle
+                class="pa1"
+                (change)="onCheckBoxChanged()"
+                [(ngModel)]="filterCompleted">
+                Hide Completed Quests
+            </mat-slide-toggle>
+        </div>
+        <div>
+            <mat-form-field appearance="fill" class="pa1 w-100">
+                <mat-label>Quest city</mat-label>
+                <mat-select [(value)]="selectedLocation" (selectionChange)="onSelectionChanged()">
+                    <mat-option *ngFor="let option of locationList;" [value]="option">
+                    {{ option }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div>
+            <button mat-flat-button class="pa1 w-100" color="warn" (click)="onClickReset()">Reset</button>
+        </div>
+    </mat-card>
+
+</div>
+
+

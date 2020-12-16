@@ -1,0 +1,22 @@
+<mat-card class ="ma4">
+    <h2 class="mb1" [ngClass]="{ 'strike' : quest.complete }" >{{ quest.title }}</h2>
+    <div class="gray ph3">{{ quest.created }}</div>
+    <div class="ph3 pv0 mv0">
+        <p>Reward: {{ quest.reward }}</p>
+        <p>City: {{ quest.city }}</p>
+        <p>Location: {{ quest.location }}</p>
+
+        <p>Description:</p>
+        <ul *ngIf="isDescriptionList(); else singleLine">
+            <li *ngFor="let item of quest.description;">{{ item }}</li>
+        </ul>
+        <ng-template #singleLine>{{ quest.description }}</ng-template>
+        
+        <p>Progress:</p>
+        <div *ngFor="let step of quest.progress;" class="ph3">
+            <input type="checkbox" [checked]="step.step_complete">
+            <span [ngClass]="{'strike' : step.step_complete, 'ph1': true}">{{ step.step_title }}</span>
+        </div>
+    </div>
+</mat-card>
+
