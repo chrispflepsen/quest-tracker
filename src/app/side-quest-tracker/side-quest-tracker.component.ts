@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Quest } from '../models'
 
@@ -15,6 +15,7 @@ export class SideQuestTrackerComponent implements OnInit {
   public filterCompleted = true;
   public locationList: Array<string> = null;
   public selectedLocation: string = '';
+  public showFiltersList = false;
 
   constructor(private httpClient: HttpClient ) { }
 
@@ -28,7 +29,6 @@ export class SideQuestTrackerComponent implements OnInit {
   }
 
   filterQuests() {
-    console.log(this.selectedLocation);
     this.quests = this.allQuests.filter((quest) => {
       const isCorrectLocation = this.selectedLocation !== '' ? quest.city === this.selectedLocation : true;
       const isQuestStatusCorrect = this.filterCompleted ? quest.complete !== true : true;
@@ -48,10 +48,21 @@ export class SideQuestTrackerComponent implements OnInit {
     this.filterQuests()
   }
 
+  onClickFilter() {
+    this.showFiltersList = this.showFiltersList === true ? false : true;
+  }
+
   onClickReset() {
     this.filterCompleted = true;
     this.selectedLocation = '';
     this.filterQuests();
   }
+
+  @HostListener('window:scroll', ['$event'])
+    handleScroll(){
+      if (this.showFiltersList === true) {
+        this.showFiltersList = false;
+      }
+    }
 
 }

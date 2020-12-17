@@ -1,32 +1,39 @@
-<div class="h-100 dib">
-    <div class="quest-list w-75">
-        <h1 class="pa2 tc">Quest Tracker:</h1>
+<div>
+    <div class="quest-list pt5 center w-80-l w-90-m w-100-ns">
         <app-quest-card *ngFor="let quest of quests;" [quest]="quest"></app-quest-card>
     </div>
+
+    <div class="header fixed top-0 right-0 left-0">
+        <h1 class="pt3 pl3 tc dib">Quest Tracker</h1>
+        <mat-icon class="filter-button dim fr cf pv3 pr3 pointer dib" (click)="onClickFilter()">filter_alt</mat-icon>
+        <hr>
+    </div>
     
-    <mat-card class="filter-list w-20">
-        <div>
-            <mat-slide-toggle
-                class="pa1"
-                (change)="onCheckBoxChanged()"
-                [(ngModel)]="filterCompleted">
-                Hide Completed Quests
-            </mat-slide-toggle>
-        </div>
-        <div>
-            <mat-form-field appearance="fill" class="pa1 w-100">
-                <mat-label>Quest city</mat-label>
-                <mat-select [(value)]="selectedLocation" (selectionChange)="onSelectionChanged()">
-                    <mat-option *ngFor="let option of locationList;" [value]="option">
-                    {{ option }}
-                    </mat-option>
-                </mat-select>
-            </mat-form-field>
-        </div>
-        <div>
-            <button mat-flat-button class="pa1 w-100" color="warn" (click)="onClickReset()">Reset</button>
-        </div>
-    </mat-card>
+    <div *ngIf="showFiltersList" class="filter-list fixed right-1-l right-1-m">
+        <mat-card>
+            <div>
+                <mat-slide-toggle
+                    class="pa1"
+                    (change)="onCheckBoxChanged()"
+                    [(ngModel)]="filterCompleted">
+                    Hide Completed Quests
+                </mat-slide-toggle>
+            </div>
+            <div>
+                <mat-form-field appearance="fill" class="pa1 w-100">
+                    <mat-label>Quest city</mat-label>
+                    <mat-select [(value)]="selectedLocation" (selectionChange)="onSelectionChanged()">
+                        <mat-option *ngFor="let option of locationList;" [value]="option">
+                        {{ option }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <button mat-flat-button class="pa1 w-100" color="warn" (click)="onClickReset()">Reset</button>
+            </div>
+        </mat-card>
+    </div>
 
 </div>
 

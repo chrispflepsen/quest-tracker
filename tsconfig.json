@@ -8,6 +8,7 @@
   "files": [],
   "compilerOptions": {
     "resolveJsonModule": true,
+    "experimentalDecorators": true,
   },
   "references": [
     {

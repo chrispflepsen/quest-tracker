@@ -1,5 +1,9 @@
+.header {
+    background-color: white;
+}
+
 .filter-list {
+    top: 4em;
     position: fixed;
-    top: 80px;
-    right: 25px;
+    right: 1em;
 }
