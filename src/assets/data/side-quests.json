@@ -49,7 +49,7 @@
             "She has offered 100 gold pieces to anyone who can apprehend the murderer, ascertain the murderer’s guilt, and deal with the murderer, preferably without involving the authorities.",
             "Three murders have been committed in the past month:",
             "A halfling trapper in Easthaven",
-            "A human shipbuilder in Targos (Maurice)",
+            "A human shipbuilder in Targos (Maurice) - Maurice was a cheat and a terrible briber",
             "A dwarf glassblower in Bryn Shander",
             "Each of these murders took place in a town that makes humanoid sacrifice to Auril",
             "Maurice was always very nervous about the humanoid sacrifice lottery, and that his body was found just outside of town where merchant caravans tend to set up shops."
@@ -79,7 +79,7 @@
             "Boy drags them to the home of a human. While serving them Luke-warm cider, the human tells them about his husband Garret, who led an expedition up Kelvin’s Cairn. They left from Car-Konig, and if Boy is back in Targos, something terrible must have happened. Boy would never leave Garret’s side otherwise."
         ],
         "title" : "A Dog Named Boy",
-        "complete" : false,
+        "complete" : true,
         "contact": "Garret's Husband",
         "city": "Targos",
         "location": "Garret's Home",
@@ -88,8 +88,12 @@
         "updated": "2020-14-08",
         "progress" : [
             {
-                "step_complete" : false,
+                "step_complete" : true,
                 "step_title" : "Follow Boy to Kelvin's Cairn"
+            },
+            {
+                "step_complete" : true,
+                "step_title" : "Return Garret"
             }
         ]
     },
@@ -113,6 +117,34 @@
             {
                 "step_complete" : false,
                 "step_title" : "Drink all the beer"
+            }
+        ]
+    },
+    {
+        "description" : [
+            "There is a large beast in the lake at Breman",
+            "The reward of a scroll of animal friendship was a little on the nose."
+        ],
+        "title" : "The Beast Within",
+        "complete" : false,
+        "contact": "",
+        "city": "Breman",
+        "location": "Lake",
+        "reward": "",
+        "created": "2020-14-08",
+        "updated": "2020-14-08",
+        "progress" : [
+            {
+                "step_complete" : true,
+                "step_title" : "Fish for knuckleheaded trout"
+            },
+            {
+                "step_complete" : true,
+                "step_title" : "Gather intel for a local"
+            },
+            {
+                "step_complete" : false,
+                "step_title" : "Befriend lake monster"
             }
         ]
     }
